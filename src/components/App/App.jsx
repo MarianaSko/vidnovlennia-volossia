@@ -4,6 +4,7 @@ import HomePage from "../../pages/HomePage/HomePage";
 import ServicesPage from "../../pages/ServicesPage/ServicesPage";
 import ContactsPage from "../../pages/ContactsPage/ContactsPage";
 import Layout from "../Layout/Layout";
+import Studio from "../Studio/Studio";
 
 function App() {
   return (

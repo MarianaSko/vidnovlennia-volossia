@@ -45,11 +45,9 @@ export const StyledBackground = styled.div`
 export const StyledHeading = styled.h1`
   color: #5c8692;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 154.5%; /* 23.175px */
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  line-height: 1.54;
+  letter-spacing: 0.075em;
   margin-bottom: 8px;
 `;
 export const StyledText = styled.p`
@@ -103,4 +101,9 @@ export const Line = styled.div`
   background-color: #1e705c;
   transform: rotate(-90deg);
   margin-right: 40px;
+`;
+
+export const SectionContainer = styled.div`
+  /* display: flex;
+  flex-direction: column; */
 `;

@@ -80,7 +80,7 @@ const Layout = () => {
             </a>
           </SocialMediaWrapper>
         </LinksContainer>
-        <p> &copy; 2024 Студія “Vidnovlennya Volossya»</p>
+        <p> &copy; 2024 Студія &#34;Vidnovlennya Volossya&#34;</p>
       </StyledFooter>
     </div>
   );
