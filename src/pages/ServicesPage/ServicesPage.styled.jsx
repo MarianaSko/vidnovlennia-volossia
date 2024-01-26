@@ -1,4 +1,7 @@
 import styled from "styled-components";
+export const Container = styled.div`
+  padding: 40px 120px;
+`;
 
 export const StyledHeading = styled.h2`
   color: #5c8692;
@@ -47,4 +50,9 @@ export const StyledList = styled.ul`
   flex-direction: column;
   gap: 100px;
   margin-top: 40px;
+`;
+
+export const Logo = styled.img`
+  height: 240px;
+  margin: 0 auto;
 `;
