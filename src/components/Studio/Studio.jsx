@@ -1,4 +1,4 @@
-import studio from "../../images/studio.webp";
+import studio from "../../images/studio.jpg";
 import { StyledDescription } from "../../pages/HomePage/HomePage.styled";
 import { StyledHeading, StyledText } from "./Studio.styled";
 import { Container, StyledDiv } from "./Studio.styled";

@@ -3,19 +3,19 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   padding: 0 120px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   justify-content: space-between;
-  /* background-color: rgba(41, 153, 71, 0.1); */
   background-color: #1e705c;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
   a {
     padding: 16px 0;
     text-transform: uppercase;
     color: #ebf3f5;
     font-weight: 700;
+
     &:hover,
     &:focus {
       color: #f0c2d2;
@@ -40,6 +40,7 @@ export const RightContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 12px;
+
   img {
     width: 20px;
     height: 28px;
@@ -56,16 +57,20 @@ export const StyledFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   a {
     color: #ebf3f5;
+
     &:hover,
     &:focus {
       color: #f0c2d2;
     }
+
     svg {
       cursor: pointer;
     }
   }
+
   p {
     color: #ebf3f5;
   }

@@ -1,11 +1,11 @@
 import React from "react";
-import backgroundImg from "../../images/background_image.png";
+import backgroundImg from "../../images/background.png";
 import {
   HomePageContainer,
   Line,
   LinksWrapper,
-  SectionContainer,
   StyledBackground,
+  StyledBtn,
   StyledDescription,
   StyledDiv,
   StyledFrame,
@@ -15,7 +15,11 @@ import {
   Wrapper,
 } from "./HomePage.styled";
 import Studio from "../../components/Studio/Studio";
+import { useNavigate } from "react-router-dom";
+
 const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <Wrapper>
@@ -56,6 +60,9 @@ const HomePage = () => {
               волосся усіх видів у м. Львів. Саме з нами можете не хвилюватись
               про ваше волосся, бо ми дбаємо про кожного клієнта, як про себе.
             </StyledDescription>
+            <StyledBtn onClick={() => navigate("/services")}>
+              Переглянути послуги
+            </StyledBtn>
           </TextWrapper>
         </HomePageContainer>
         <StyledDiv>

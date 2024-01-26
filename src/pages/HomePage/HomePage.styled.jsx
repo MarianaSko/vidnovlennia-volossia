@@ -1,22 +1,25 @@
 import styled from "styled-components";
 
 export const HomePageContainer = styled.div`
-  /* padding-left: 200px; */
-  /* padding-top: 120px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  padding: 120px 120px;
 `;
 
 export const StyledDiv = styled.div`
-  width: 50%;
+  //   width: 50%;
 
-  height: 100vh;
+  //   height: 100vh;
+
   background-color: #1e705c;
-  /* position: ;
-  right: 0;
-  */
+  position: absolute;
+  top: 80px;
+  right: 0px;
   z-index: -1;
+  height: 100vh;
+  min-width: 40%;
+  //   z-index: -1;
 `;
 
 export const StyledFrame = styled.div`
@@ -34,12 +37,15 @@ export const StyledFrame = styled.div`
 `;
 
 export const StyledBackground = styled.div`
-  max-width: 400px;
+  min-width: 400px;
   max-height: 400px;
   background-color: #0e8c56;
   display: flex;
   align-items: center;
   justify-content: center;
+  img {
+    max-height: 680px;
+  }
 `;
 
 export const StyledHeading = styled.h1`
@@ -70,12 +76,12 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 510px;
+  max-width: 600px;
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  gap: 80px;
+  /* display: flex;
+  gap: 80px; */
 `;
 
 export const LinksWrapper = styled.div`
@@ -84,6 +90,9 @@ export const LinksWrapper = styled.div`
   align-items: center;
   justify-content: center;
   gap: 40px;
+  position: fixed;
+  left: -12%;
+  top: 44%;
   a {
     color: #0e8c56;
     font-weight: 700;
@@ -106,4 +115,21 @@ export const Line = styled.div`
 export const SectionContainer = styled.div`
   /* display: flex;
   flex-direction: column; */
+`;
+
+export const StyledBtn = styled.button`
+  /* margin: 0 auto; */
+  margin-top: 24px;
+  border: 2px solid #0e8c56;
+  border-radius: 24px;
+  color: #0e8c56;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 16px 40px;
+  &:hover,
+  &:focus {
+    background-color: #0e8c56;
+    color: #fff;
+  }
 `;

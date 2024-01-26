@@ -22,7 +22,6 @@ const Layout = () => {
           <NavLink to="/">
             <Logo src={logo} alt="" />
           </NavLink>
-          {/* <NavLink to="/">Головна</NavLink> */}
           <NavLink to="services">Послуги</NavLink>
           <NavLink to="contacts">Контакти</NavLink>
         </LeftContainer>

@@ -1,9 +1,35 @@
 import React from "react";
-import Studio from "../../components/Studio/Studio";
-import studio from "../../images/studio.webp";
+import {
+  HeadingWrapper,
+  StyledDescription,
+  StyledHeading,
+  StyledText,
+} from "./ServicesPage.styled";
+import { Container } from "../../components/Studio/Studio.styled";
+import { servicesList } from "../../components/ServiceItem/servicesList";
+import ServiceItem from "../../components/ServiceItem/ServiceItem";
 
 const ServicesPage = () => {
-  return <div></div>;
+  return (
+    <Container>
+      <HeadingWrapper>
+        <StyledHeading>Наші послуги</StyledHeading>
+        <StyledText>Чудовий результат за дві години</StyledText>
+        <StyledDescription>
+          Майстри нашої Студії <span>&#34;Vidnovlennya Volossya&#34; </span>
+          прекрасно знають, як правильно підібрати та якісно виконати процедури
+          для вашого волосся. Ми використовуємо лише професійні засоби
+          <span> premium </span>
+          класу.
+        </StyledDescription>
+      </HeadingWrapper>
+      <ul>
+        {servicesList.map((item) => (
+          <ServiceItem key={item.id} obj={item}></ServiceItem>
+        ))}
+      </ul>
+    </Container>
+  );
 };
 
 export default ServicesPage;
