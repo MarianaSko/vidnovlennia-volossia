@@ -21,12 +21,7 @@ const ServiceItem = ({ obj }) => {
   return (
     <StyledItem>
       <Section>
-        <swiper-container
-          speed="500"
-          loop="true"
-          navigation="true"
-          autoplay="true"
-        >
+        <swiper-container speed="500" navigation="true" autoplay="true">
           <swiper-slide>
             <PicWrapper>
               <Img src={Object.values(imgAfter)[0]} alt="car1" />

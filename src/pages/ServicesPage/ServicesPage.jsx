@@ -1,8 +1,8 @@
-import React from "react";
 import {
   HeadingWrapper,
   StyledDescription,
   StyledHeading,
+  StyledList,
   StyledText,
 } from "./ServicesPage.styled";
 import { Container } from "../../components/Studio/Studio.styled";
@@ -23,11 +23,11 @@ const ServicesPage = () => {
           класу.
         </StyledDescription>
       </HeadingWrapper>
-      <ul>
+      <StyledList>
         {servicesList.map((item) => (
           <ServiceItem key={item.id} obj={item}></ServiceItem>
         ))}
-      </ul>
+      </StyledList>
     </Container>
   );
 };

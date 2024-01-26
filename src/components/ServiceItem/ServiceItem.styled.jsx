@@ -12,7 +12,7 @@ export const Img = styled.img`
 `;
 
 export const Section = styled.section`
-  margin-top: 100px;
+  /* margin-top: 100px; */
   max-width: 600px;
 `;
 

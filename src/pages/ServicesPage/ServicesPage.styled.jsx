@@ -41,3 +41,9 @@ export const HeadingWrapper = styled.div`
   justify-content: center;
   gap: 8px;
 `;
+export const StyledList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 40px;
+`;
