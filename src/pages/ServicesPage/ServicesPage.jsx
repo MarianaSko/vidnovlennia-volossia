@@ -8,10 +8,12 @@ import {
 import { Container } from "../../components/Studio/Studio.styled";
 import { servicesList } from "../../components/ServiceItem/servicesList";
 import ServiceItem from "../../components/ServiceItem/ServiceItem";
+import Links from "../../components/Links/Links";
 
 const ServicesPage = () => {
   return (
     <Container>
+      <Links />
       <HeadingWrapper>
         <StyledHeading>Наші послуги</StyledHeading>
         <StyledText>Чудовий результат за дві години</StyledText>

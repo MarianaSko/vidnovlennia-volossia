@@ -1,9 +1,6 @@
-import React from "react";
 import backgroundImg from "../../images/background.png";
 import {
   HomePageContainer,
-  Line,
-  LinksWrapper,
   StyledBackground,
   StyledBtn,
   StyledDescription,
@@ -16,6 +13,7 @@ import {
 } from "./HomePage.styled";
 import Studio from "../../components/Studio/Studio";
 import { useNavigate } from "react-router-dom";
+import Links from "../../components/Links/Links";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -24,30 +22,7 @@ const HomePage = () => {
     <div>
       <Wrapper>
         <HomePageContainer>
-          <LinksWrapper>
-            <Line></Line>
-            <a
-              href="https://t.me/vidnovlennyavolossya"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Telegram
-            </a>
-            <a
-              href="https://www.instagram.com/vidnovlennyavolossya/?igshid=MzRlODBiNWFlZA%3D%3D"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://www.facebook.com/Vidnovlennyavolossya"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Facebook
-            </a>
-          </LinksWrapper>
+          <Links />
           <TextWrapper>
             <StyledHeading>
               Студія &#34;VIDNOVLENNYA VOLOSSYA &#34;

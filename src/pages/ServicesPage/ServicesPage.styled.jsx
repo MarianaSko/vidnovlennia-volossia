@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledHeading = styled.h2`
   color: #5c8692;
-
   font-size: 15px;
   line-height: 1.54;
   font-weight: 600;
@@ -29,6 +28,7 @@ export const StyledDescription = styled.p`
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
   span {
     color: #0e8c56;
   }
@@ -41,6 +41,7 @@ export const HeadingWrapper = styled.div`
   justify-content: center;
   gap: 8px;
 `;
+
 export const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
