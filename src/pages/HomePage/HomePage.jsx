@@ -1,4 +1,5 @@
 import backgroundImg from "../../images/background.png";
+import photo from "../../images/iryna.jpg";
 import {
   HomePageContainer,
   StyledBackground,
@@ -7,6 +8,7 @@ import {
   StyledDiv,
   StyledFrame,
   StyledHeading,
+  StyledPhoto,
   StyledText,
   TextWrapper,
   Wrapper,
@@ -14,9 +16,13 @@ import {
 import Studio from "../../components/Studio/Studio";
 import { useNavigate } from "react-router-dom";
 import Links from "../../components/Links/Links";
+import { useMediaQuery } from "react-responsive";
 
 const HomePage = () => {
   const navigate = useNavigate();
+  console.log(screen.width);
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 950px)" });
 
   return (
     <div>
@@ -40,13 +46,17 @@ const HomePage = () => {
             </StyledBtn>
           </TextWrapper>
         </HomePageContainer>
-        <StyledDiv>
-          <StyledFrame>
-            <StyledBackground>
-              <img src={backgroundImg} alt="Фото Ірини Лащенко" />
-            </StyledBackground>
-          </StyledFrame>
-        </StyledDiv>
+        {!isTabletOrMobile ? (
+          <StyledDiv>
+            <StyledFrame>
+              <StyledBackground>
+                <img src={backgroundImg} alt="Фото Ірини Лащенко" />
+              </StyledBackground>
+            </StyledFrame>
+          </StyledDiv>
+        ) : (
+          <StyledPhoto src={photo}></StyledPhoto>
+        )}
       </Wrapper>
       <Studio></Studio>
     </div>

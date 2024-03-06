@@ -8,7 +8,7 @@ export const LinksWrapper = styled.div`
   gap: 40px;
   position: fixed;
   left: -12%;
-  top: 44%;
+  top: 54%;
   a {
     color: #0e8c56;
     font-weight: 700;
@@ -18,6 +18,13 @@ export const LinksWrapper = styled.div`
       color: #1e705c;
     }
   }
+  @media only screen and (max-width: 1000px) {
+    position: absolute;
+    left: -15%;
+  }
+  @media only screen and (max-width: 795px) {
+    display: none;
+  }
 `;
 
 export const Line = styled.div`
@@ -26,4 +33,7 @@ export const Line = styled.div`
   background-color: #1e705c;
   transform: rotate(-90deg);
   margin-right: 40px;
+  @media only screen and (max-width: 1180px) {
+    margin-right: 0;
+  }
 `;

@@ -21,6 +21,9 @@ export const StyledHeader = styled.header`
       color: #f0c2d2;
     }
   }
+  @media only screen and (max-width: 950px) {
+    padding: 0 80px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -73,6 +76,9 @@ export const StyledFooter = styled.div`
 
   p {
     color: #ebf3f5;
+  }
+  @media only screen and (max-width: 950px) {
+    padding: 16px 80px;
   }
 `;
 
